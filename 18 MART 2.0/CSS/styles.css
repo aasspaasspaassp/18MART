@@ -1,0 +1,327 @@
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  
+  font-family: verdana, sans-serif;
+  background-color: rgba(255,255,255, 0.4);
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px;
+  justify-content: space-between;
+}
+
+.home-button{
+  width: 8%;
+  height: auto;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding-right: 18px;
+  padding-top: 16px;
+  font-size: 1.1em;
+}
+
+#menu a{
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#shopIcon{
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: center;  
+}
+
+ul{
+  list-style: none;
+  
+}
+
+
+
+#vectorgoneshopping{
+  background-color: wheat;
+}
+
+#copy_1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  line-height: 1.6;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.4rem;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+#gridproductos{
+
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+h1 {
+  color:orange;
+  }
+
+#copySucursal{
+    color: black;
+  }
+
+#map{
+  background-color: orange;
+}
+
+#footerDiv{
+  background-color: orangered;
+}
+
+
+.fixedButton {
+  background-color: #FF2434;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  box-shadow: 1px 3px 5px #888888;
+
+}
+
+.fixedButton i{
+  font-size: 3em;
+}
+
+@media (max-width: 600px){
+
+  #grid{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+  
+  }
+  .galeria .contenedor{
+    width: 600px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "uno"
+    "dos"
+    "tres"
+    "cuatro"
+    "cinco"
+    "seis"
+    "siete"
+    "ocho"
+    "nueve"
+    "diez"
+    "once"
+    "doce"
+    "trece"
+    "catorce"
+    "quince"
+    "dieciseis"
+    "diecisiete"
+    "dieciocho";
+  }
+  .img{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .img:hover{
+    transform: scale(1.05);
+    transition: all 0.8;
+  }
+
+}
+
+@media (min-width: 601px){
+
+  #grid{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  
+  }
+
+  .galeria .contenedor{
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "uno uno dos dos"
+    "tres cuatro cinco cinco"
+    "tres seis siete ocho"
+    "nueve nueve diez diez"
+    "once once doce doce"
+    "trece catorce quince quince"
+    "trece dieciseis quince quince"
+    "diecisiete diecisiete dieciocho dieciocho";
+
+  }
+  
+  .img{
+    border-radius: 30px;
+    margin: 0.6rem;
+  }
+
+  .img:hover{
+    transform: scale(1.05);
+    transition: all 0.8;
+  }
+}
+
+
+.img1{
+  background-image: linear-gradient(to right, red, yellow);
+  font-size: 2em;
+  grid-area: uno;
+}
+
+.img2{
+  background-image: linear-gradient(to right, orange, yellow);
+  font-size: 2rem;
+  grid-area: dos;
+}
+
+.img3{
+  background-image: linear-gradient(to right, red, wheat);
+  grid-area: tres;
+}
+
+.img4{
+  background-image: linear-gradient(to left, red, orange, wheat);
+  grid-area: cuatro;
+}
+
+.img5{
+  background-image: linear-gradient(to right, red, yellow);
+  font-size: 2em;
+  grid-area: cinco;
+}
+
+.img6{
+  background-image: linear-gradient(to right, red, yellow);
+  font-size: 2rem;
+  grid-area: seis;
+}
+
+.img7{
+  background-image: linear-gradient(to right, red, wheat);
+  grid-area: siete;
+}
+
+.img8{
+  background-image: linear-gradient(to left, red, orange, wheat);
+  grid-area: ocho;
+}
+
+.img9{
+  background-image: linear-gradient(to right, red, yellow);
+  font-size: 2em;
+  grid-area: nueve;
+}
+
+.img10{
+  background-image: linear-gradient(to right, orange, yellow);
+  font-size: 2rem;
+  grid-area: diez;
+}
+
+.img11{
+  background-image: linear-gradient(to right, red, wheat);
+  grid-area: once;
+}
+
+.img12{
+  background-image: linear-gradient(to left, red, orange, wheat);
+  grid-area: doce;
+}
+
+.img13{
+  background-image: linear-gradient(to right, red, yellow);
+  font-size: 2em;
+  grid-area: trece;
+}
+
+.img14{
+  background-image: linear-gradient(to right, red, yellow);
+  font-size: 2rem;
+  grid-area: catorce;
+}
+
+.img15{
+  background-image: linear-gradient(to right, red, wheat);
+  grid-area: quince;
+}
+
+.img16{
+  background-image: linear-gradient(to left, red, orange, wheat);
+  grid-area: dieciseis;
+}
+
+.img17{
+  background-image: linear-gradient(to right, red, wheat);
+  grid-area: diecisiete;
+}
+
+.img18{
+  background-image: linear-gradient(to left, red, orange, wheat);
+  grid-area: dieciocho;
+}
+
+
+
+
